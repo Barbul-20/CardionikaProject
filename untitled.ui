@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #1F1B2C;  /* Темный фон для кнопок */</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="CanvasForLeftButtons">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-40</y>
+      <width>227</width>
+      <height>1121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: #171F34;  /* Темный фон для кнопок */</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="main_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>130</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+    text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>   Главная</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/Group 15.png</normaloff>Images/Group 15.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="equipment_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>185</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+     </property>
+     <property name="text">
+      <string>   Оборудование</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/Group 14.png</normaloff>Images/Group 14.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pacient_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>235</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	image: url(:/Profile/C:/Users/Abraham/Desktop/321.png);
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+     </property>
+     <property name="text">
+      <string>   Пациенты</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/Group 10.png</normaloff>Images/Group 10.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="documents_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>285</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+    text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+     </property>
+     <property name="text">
+      <string>   Документы</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/Group 13.png</normaloff>Images/Group 13.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chat_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>335</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+    text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+     </property>
+     <property name="text">
+      <string>   Сообщения</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/Group 12.png</normaloff>Images/Group 12.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="settings_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>435</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+    text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+     </property>
+     <property name="text">
+      <string>   Настройки</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/Group 11.png</normaloff>Images/Group 11.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exit_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>970</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+     </property>
+     <property name="text">
+      <string>Выйти</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/Group 16.png</normaloff>Images/Group 16.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="directory_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>385</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+    text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+     </property>
+     <property name="text">
+      <string>   Справочники</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/lists.png</normaloff>Images/lists.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>0</y>
+      <width>1681</width>
+      <height>1061</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>6</number>
+    </property>
+    <widget class="QWidget" name="HomePage">
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>330</y>
+        <width>891</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    font-size: 100px;  /* Размер шрифта */</string>
+      </property>
+      <property name="text">
+       <string>Добро пожаловать!</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="MainPage">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font-size: 14px;  /* Размер шрифта */
+border: none;  /* Убрать рамки */</string>
+      </property>
+      <property name="text">
+       <string>Пациенты</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>421</width>
+        <height>62</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    border: 1px solid gray;  /* Ширина и цвет границы */
+	background-color: #171F34;  /* Темный фон для кнопок */
+    border-radius: 5px;  /* Скругленные углы */         
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>20</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #4277FF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+    text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 14px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Просмотр</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>421</width>
+        <height>352</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    border: 1px solid gray;  /* Ширина и цвет границы */
+	background-color: #171F34;  /* Темный фон для кнопок */
+    border-radius: 5px;  /* Скругленные углы */         
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font-size: 14px;  /* Размер шрифта */
+    border: none;  /* Убрать рамки */</string>
+       </property>
+       <property name="text">
+        <string>Развернутый анализ</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>110</y>
+        <width>721</width>
+        <height>434</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    border: 1px solid gray;  /* Ширина и цвет границы */
+	background-color: #171F34;  /* Темный фон для кнопок */
+    border-radius: 5px;  /* Скругленные углы */         
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>70</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font-size: 14px;  /* Размер шрифта */
+border: none;  /* Убрать рамки */</string>
+      </property>
+      <property name="text">
+       <string>Текущие обследования</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="EquipmentPage">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>210</y>
+        <width>461</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    font-size: 40px;  /* Размер шрифта */</string>
+      </property>
+      <property name="text">
+       <string>Тут будет оборудование</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PacientPage">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>240</y>
+        <width>381</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    font-size: 40px;  /* Размер шрифта */</string>
+      </property>
+      <property name="text">
+       <string>Тут будут пациенты</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="DocumentsPage">
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>270</y>
+        <width>401</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    font-size: 40px;  /* Размер шрифта */</string>
+      </property>
+      <property name="text">
+       <string>Тут будут документы</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ChatPage">
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>240</y>
+        <width>401</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    font-size: 40px;  /* Размер шрифта */</string>
+      </property>
+      <property name="text">
+       <string>Тут будут сообщения</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="DirectoryPage">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1571</width>
+        <height>1011</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="med_inst">
+       <attribute name="title">
+        <string>Медицинские учреждения</string>
+       </attribute>
+       <widget class="QPushButton" name="add_button_med">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Добавить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="delete_button_med">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>  Удалить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="change_button_med">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Изменить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="check_button_med">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Просмотр</string>
+        </property>
+       </widget>
+       <widget class="QStackedWidget" name="stackedWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>1661</width>
+          <height>901</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="check_page_med">
+         <widget class="QTableView" name="tableView">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>50</y>
+            <width>1541</width>
+            <height>851</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   QTableView {
+    color: white; /* Цвет текста в ячейках */
+    background-color: black; /* Цвет фона таблицы */
+    gridline-color: gray; /* Цвет линий сетки */
+}
+
+QHeaderView::section {
+    background-color: black; /* Цвет фона заголовков */
+    color: white; /* Цвет текста в заголовках */
+    border: 1px solid gray; /* Цвет границы заголовков */
+}</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="add_page_med">
+         <widget class="QWidget" name="formLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>721</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_11">
+             <property name="styleSheet">
+              <string notr="true">background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */</string>
+             </property>
+             <property name="text">
+              <string>Название учреждения    :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="styleSheet">
+              <string notr="true">    color: #FFFFFF;  /* Белый текст */</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLabel" name="label_12">
+             <property name="styleSheet">
+              <string notr="true">background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */</string>
+             </property>
+             <property name="text">
+              <string>Адрес                            :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_3">
+             <property name="styleSheet">
+              <string notr="true">    color: #FFFFFF;  /* Белый текст */</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QLabel" name="label_13">
+             <property name="styleSheet">
+              <string notr="true">background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */</string>
+             </property>
+             <property name="text">
+              <string>Телефон                        :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_4">
+             <property name="styleSheet">
+              <string notr="true">    color: #FFFFFF;  /* Белый текст */</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="2">
+            <widget class="QLabel" name="label_14">
+             <property name="styleSheet">
+              <string notr="true">background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */</string>
+             </property>
+             <property name="text">
+              <string>Email                             :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_5">
+             <property name="styleSheet">
+              <string notr="true">    color: #FFFFFF;  /* Белый текст */</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" colspan="2">
+            <widget class="QLabel" name="label_15">
+             <property name="styleSheet">
+              <string notr="true">background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */</string>
+             </property>
+             <property name="text">
+              <string>Тип учреждения            :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_6">
+             <property name="styleSheet">
+              <string notr="true">    color: #FFFFFF;  /* Белый текст */</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0" colspan="2">
+            <widget class="QLabel" name="label_16">
+             <property name="styleSheet">
+              <string notr="true">background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */</string>
+             </property>
+             <property name="text">
+              <string>Сайт                              :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_7">
+             <property name="styleSheet">
+              <string notr="true">    color: #FFFFFF;  /* Белый текст */</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0" colspan="2">
+            <widget class="QLabel" name="label_17">
+             <property name="styleSheet">
+              <string notr="true">background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */</string>
+             </property>
+             <property name="text">
+              <string>Часы работы                  :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_8">
+             <property name="styleSheet">
+              <string notr="true">    color: #FFFFFF;  /* Белый текст */</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0" colspan="2">
+            <widget class="QLabel" name="label_18">
+             <property name="styleSheet">
+              <string notr="true">background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */</string>
+             </property>
+             <property name="text">
+              <string>Главный врач                :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_9">
+             <property name="styleSheet">
+              <string notr="true">    color: #FFFFFF;  /* Белый текст */</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="send_button_med">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>460</y>
+            <width>131</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+          </property>
+          <property name="text">
+           <string>Отправить</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="delete_page_med"/>
+        <widget class="QWidget" name="change_page_med"/>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="equip">
+       <attribute name="title">
+        <string>Оборудование</string>
+       </attribute>
+       <widget class="QPushButton" name="delete_button_eq">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>  Удалить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_button_eq">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Добавить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="change_button_eq">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Изменить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_button_med_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Просмотр</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pacients">
+       <attribute name="title">
+        <string>Пациенты</string>
+       </attribute>
+       <widget class="QPushButton" name="delete_button_pac">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>  Удалить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_button_pac">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Добавить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="change_button_pac">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Изменить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_button_med_4">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Просмотр</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="emp">
+       <attribute name="title">
+        <string>Сотрудники</string>
+       </attribute>
+       <widget class="QPushButton" name="delete_button_emp">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>  Удалить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_button_emp">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Добавить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="change_button_emp">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Изменить</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_button_med_5">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #171F34;  /* Темный фон для кнопок */
+    color: #FFFFFF;  /* Белый текст */
+	border: 2px solid white; /* Белая рамка толщиной 2px */	
+    border-radius: 5px;  /* Скругленные углы */
+   text-align: left;
+    padding-left: 25px; /* Отступ слева для текста */
+    font-size: 16px;  /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: #3B3F45;  /* Более светлый фон при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1);  /* 10% белый фон при нажатии */
+    border: 2px solid #FFFFFF;  /* Белая рамка при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Просмотр</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="SettingsPage">
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>250</y>
+        <width>391</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> color: #FFFFFF;  /* Белый текст */
+    border: none;  /* Убрать рамки */
+    font-size: 40px;  /* Размер шрифта */</string>
+      </property>
+      <property name="text">
+       <string>Тут будут настройки</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Images/Image.qrc"/>
+  <include location="Images/Image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
